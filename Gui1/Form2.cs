@@ -48,14 +48,13 @@ namespace Gui1
 
             for (int i = 0; i < oper.Count; i++)
             {
-                result = go(oper[i], i, result, nu[i + 1]);
+                result = go(oper[i], result, nu[i + 1]);
             }
-
 
             richTextBox1.Text += " = " + result.ToString();
         }
 
-        double go(char x, int i, double y, double z)
+        double go(char x, double y, double z)
         {
             switch (x)
             {
